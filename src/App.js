@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
 import WeatherList from './components/WeatherList';
+import Header from './components/Header';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+          <Header/>
           <WeatherList />
-        </header>
+
       </div>
     );
   }
