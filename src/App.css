@@ -21,12 +21,55 @@
 .App-link {
   color: #61dafb;
 }
+.App-weatherItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid violet;
+  min-width: 320px;
+  max-width: 100%;
+}
+.App-weatherItem .prediction {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+.App-weatherItem .time {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    flex:1;
+
+}
+.App-weatherItem .temperature{
+
+  flex:1;
+}
+.App-weatherItem .description{
+  flex:1;
+}
+.App-weatherItem .itemHeader{
+  background-color: darkmagenta;
+}
+.App-weatherList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+@media only screen and (min-width: 480px) {
+  .App-weatherItem {
+    flex: 1;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-width: 1224px) {
+  .App-weatherItem {
+    flex: 33.33%;
+  }
+}
+@media only screen and (min-width: 1824px) {
+  .App-weatherItem {
+    flex: 1;
   }
 }

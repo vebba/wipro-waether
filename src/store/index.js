@@ -8,11 +8,14 @@ import mainSaga from "../sagas";
 const sagaMiddleware = createSagaMiddleware();
 // mount it on the Store
 let middleware = applyMiddleware(sagaMiddleware);
-if (process.env.NODE_ENV !== 'production') {
-    const devToolsExtension = window.devToolsExtension;
-    if (typeof devToolsExtension === 'function') {
-        middleware = compose(middleware, devToolsExtension());
-    }
+if (process.env.NODE_ENV !== "production") {
+  const devToolsExtension = window.devToolsExtension;
+  if (typeof devToolsExtension === "function") {
+    middleware = compose(
+      middleware,
+      devToolsExtension()
+    );
+  }
 }
 
 export default createStore(weather, middleware);
