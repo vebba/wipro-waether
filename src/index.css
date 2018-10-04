@@ -12,6 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-div {
+div, h1, h2 {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
