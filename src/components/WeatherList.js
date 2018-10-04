@@ -16,7 +16,7 @@ const WeatherList = ({ days, readings }) => {
               />
             );
           })
-        : "loading"}
+        : <div className='loading'>loading...</div>}
     </div>
   );
 };

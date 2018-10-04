@@ -4,7 +4,7 @@ import moment from "moment";
 export const api = url => fetch(url).then(response => response.json());
 
 const KEY = process.env.REACT_APP_WAETHER_API_KEY;
-const API_URL = `http://api.openweathermap.org/data/2.5/forecast?q=London,GB&appid=${KEY}&units=metric`;
+const API_URL = `https://api.openweathermap.org/data/2.5/forecast?q=London,GB&appid=${KEY}&units=metric`;
 
 const getDayForDate = date => moment(date).format("dddd");
 
