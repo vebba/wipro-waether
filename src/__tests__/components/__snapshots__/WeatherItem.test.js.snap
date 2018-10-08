@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders WeatherItem with data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherItem
+    predictions={
+      Array [
+        Object {
+          "clouds": Object {
+            "all": 88,
+          },
+          "dt": 1406106000444,
+          "dt_txt": "2014-07-23 09:00:00",
+          "main": Object {
+            "grnd_level": 1005.93,
+            "humidity": 87,
+            "pressure": 1005.93,
+            "sea_level": 1018.18,
+            "temp": 298.77,
+            "temp_kf": 0.26,
+            "temp_max": 298.774,
+            "temp_min": 298.77,
+          },
+          "name": "Day",
+          "sys": Object {
+            "pod": "d",
+          },
+          "weather": Array [
+            Object {
+              "description": "overcast clouds",
+              "icon": "04d",
+              "id": 804,
+              "main": "Clouds",
+            },
+          ],
+          "wind": Object {
+            "deg": 229.501,
+            "speed": 5.71,
+          },
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WeatherItemHeaeder
+          title="Day"
+        />,
+        Array [
+          <div
+            className="prediction"
+          >
+            <Time
+              time="09:00"
+            />
+            <Temperature
+              temperature={298}
+            />
+            <Description
+              description="Clouds"
+            />
+          </div>,
+        ],
+      ],
+      "className": "App-weatherItem",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "title": "Day",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1406106000444",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Time
+              time="09:00"
+            />,
+            <Temperature
+              temperature={298}
+            />,
+            <Description
+              description="Clouds"
+            />,
+          ],
+          "className": "prediction",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "time": "09:00",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "temperature": 298,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "description": "Clouds",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WeatherItemHeaeder
+            title="Day"
+          />,
+          Array [
+            <div
+              className="prediction"
+            >
+              <Time
+                time="09:00"
+              />
+              <Temperature
+                temperature={298}
+              />
+              <Description
+                description="Clouds"
+              />
+            </div>,
+          ],
+        ],
+        "className": "App-weatherItem",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "Day",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1406106000444",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Time
+                time="09:00"
+              />,
+              <Temperature
+                temperature={298}
+              />,
+              <Description
+                description="Clouds"
+              />,
+            ],
+            "className": "prediction",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "time": "09:00",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "temperature": 298,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "description": "Clouds",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`renders without data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <WeatherItem
+    predictions={
+      Array [
+        Object {
+          "dt": "3",
+          "main": Object {
+            "temp": "10",
+          },
+          "name": "DayName",
+          "weather": Array [
+            Object {
+              "main": "Weather",
+            },
+          ],
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WeatherItemHeaeder
+          title="DayName"
+        />,
+        Array [
+          <div
+            className="prediction"
+          >
+            <Time
+              time="18:24"
+            />
+            <Temperature
+              temperature={10}
+            />
+            <Description
+              description="Weather"
+            />
+          </div>,
+        ],
+      ],
+      "className": "App-weatherItem",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "title": "DayName",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Time
+              time="18:24"
+            />,
+            <Temperature
+              temperature={10}
+            />,
+            <Description
+              description="Weather"
+            />,
+          ],
+          "className": "prediction",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "time": "18:24",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "temperature": 10,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "description": "Weather",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WeatherItemHeaeder
+            title="DayName"
+          />,
+          Array [
+            <div
+              className="prediction"
+            >
+              <Time
+                time="18:24"
+              />
+              <Temperature
+                temperature={10}
+              />
+              <Description
+                description="Weather"
+              />
+            </div>,
+          ],
+        ],
+        "className": "App-weatherItem",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "title": "DayName",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Time
+                time="18:24"
+              />,
+              <Temperature
+                temperature={10}
+              />,
+              <Description
+                description="Weather"
+              />,
+            ],
+            "className": "prediction",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "time": "18:24",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "temperature": 10,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "description": "Weather",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

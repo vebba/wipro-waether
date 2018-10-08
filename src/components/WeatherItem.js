@@ -4,16 +4,16 @@ import moment from "moment";
 import Time from "./Time";
 import Temperature from "./Temperature";
 import Description from "./Description";
-import WeatherItemHeaeder from "./WeatherItemHeader";
+import WeatherItemHeader from "./WeatherItemHeader";
 
 const WeatherItem = ({ predictions }) => {
   return (
     <div className="App-weatherItem">
-      <WeatherItemHeaeder title={predictions[0].name} />
+      <WeatherItemHeader title={predictions[0].name || "Title"} />
       {predictions.map(item => (
         <div key={item.dt} className="prediction">
           <Time time={moment(item.dt_txt).format("HH:mm")} />
-          <Temperature tempreture={Math.floor(item.main["temp"])} />
+          <Temperature temperature={Math.floor(item.main["temp"])} />
           <Description description={item.weather[0]["main"]} />
         </div>
       ))}
@@ -24,5 +24,20 @@ const WeatherItem = ({ predictions }) => {
 WeatherItem.propTypes = {
   predictions: PropTypes.array
 };
-
+WeatherItem.defaultProps = {
+  predictions: [
+    {
+      name: "DayName",
+      dt: "3",
+      main: {
+        temp: "10"
+      },
+      weather: [
+        {
+          main: "Weather"
+        }
+      ]
+    }
+  ]
+};
 export default WeatherItem;

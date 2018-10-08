@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Temperature = ({ tempreture }) => {
+const Temperature = ({ temperature }) => {
   return (
     <div className="temperature">
-      {tempreture}
+      {temperature}
       &#8451;
     </div>
   );
 };
 
 Temperature.propTypes = {
-  tempreture: PropTypes.number
+  temperature: PropTypes.number
 };
 
 export default Temperature;
