@@ -6,7 +6,12 @@ import Temperature from "./Temperature";
 import Description from "./Description";
 import WeatherItemHeader from "./WeatherItemHeader";
 
-const WeatherItem = ({ predictions }) => {
+const WeatherItem = (props) => {
+  const { predictions } = props;
+
+  if(!predictions.length) {
+    return <span>No items in the list</span>
+  }
   return (
     <div className="App-weatherItem">
       <WeatherItemHeader title={predictions[0].name || "Title"} />

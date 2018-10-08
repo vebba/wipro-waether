@@ -45,6 +45,7 @@
     "react-dev-utils": "^6.0.3",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
+    "react-test-renderer": "^16.5.2",
     "redux": "^4.0.0",
     "redux-saga": "^0.16.0",
     "resolve": "1.8.1",
@@ -77,7 +78,8 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!/serviceWorker.js"
     ],
     "resolver": "jest-pnp-resolver",
     "setupFiles": [
